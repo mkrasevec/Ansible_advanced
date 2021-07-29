@@ -13,6 +13,7 @@
   #       - npm
   #     update_cache: yes
   - name: file configuration copy
-    copy: conf/
-    dest: /
+    copy: 
+      src: conf/
+      dest: /
 
