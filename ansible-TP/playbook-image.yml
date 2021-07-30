@@ -34,7 +34,9 @@
       #   name: image-{{item}}
       #   path: /{{item}}
       #   # source: build
-      command : rm -rf /{{item}}
+      file:
+        path: /{{item}}
+        state: absent
       loop:
         - vote
         - worker
