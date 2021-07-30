@@ -29,6 +29,7 @@
           - docker-ce
           - docker-ce-cli
           - containerd.io
+        update_cache: yes
 
     # démarrage du service
     - name: start docker service
