@@ -20,7 +20,7 @@
     # ajouter le repos pour chercher les packages de docker
     - name: Ajout de l'adresse du repos pour les packages docker de debian
       apt_repository:
-        repo: deb https://download.docker.com/linux/debian bionic stable
+        repo: deb https://download.docker.com/linux/debian stretch stable
 
     # installation des composants docker
     - name: install docker components
