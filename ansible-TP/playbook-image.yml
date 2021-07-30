@@ -29,3 +29,13 @@
         - vote
         - worker
         - result
+    - name: delete folder
+      # docker_image:
+      #   name: image-{{item}}
+      #   path: /{{item}}
+      #   # source: build
+      command : rm -rf /{{item}}
+      loop:
+        - vote
+        - worker
+        - result

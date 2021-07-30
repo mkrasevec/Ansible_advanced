@@ -41,6 +41,6 @@
     # démarrage du service
     - name: start docker service
       service:
-        name: docker start
+        name: docker
         state: started
         enabled: yes
