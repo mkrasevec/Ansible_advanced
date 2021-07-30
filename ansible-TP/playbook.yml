@@ -14,9 +14,9 @@
       update_cache: yes
   
   # Ajouter la clé gpg pour la sécurité des échanges avec le serveur des packages docker
-  - name: ajout de la cle gpg
-    apt-key:
-      url: https://download.docker.com/linux/debian/gpg
+  # - name: ajout de la cle gpg
+  #   apt-key:
+  #     url: https://download.docker.com/linux/debian/gpg
   
   # ajouter le repos pour chercher les packages de docker
   - name: Ajout de l'adresse du repos pour les packages docker de debian
