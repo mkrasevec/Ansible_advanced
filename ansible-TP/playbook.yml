@@ -10,7 +10,7 @@
           - curl
           - gnupg
           - lsb-release
-        update_cache: yes
+        # update_cache: yes
 
     # Ajouter la clé gpg pour la sécurité des échanges avec le serveur des packages docker
     - name: ajout de la cle gpg
