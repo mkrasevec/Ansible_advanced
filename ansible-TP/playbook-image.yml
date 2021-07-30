@@ -23,7 +23,7 @@
       docker_image:
         name: image-{{item}}
         path: /{{item}}
-        source: build
+        # source: build
       loop:
         - vote
         - worker
