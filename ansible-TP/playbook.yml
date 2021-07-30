@@ -30,3 +30,10 @@
         - docker-ce
         - docker-ce-cli
         - containerd.io
+  
+  # démarrage du service
+  - name: start docker service
+    service:
+      name: docker start
+      state: started
+      enabled: yes
