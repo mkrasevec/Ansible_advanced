@@ -62,7 +62,7 @@
     #     enabled: yes
   handlers:
     - name: start docker service
-      service:
+      ansible.builtin.service:
         name: docker
         state: restarted
-        enabled: yes
+        #enabled: yes
