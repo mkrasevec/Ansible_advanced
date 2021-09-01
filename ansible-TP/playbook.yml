@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: Installation des packages de base pour docker
+    - name: Installation des packages de base pour docker famille debian
       apt:
         name:
           - apt-transport-https
@@ -11,12 +11,24 @@
           - gnupg
           - lsb-release
         update_cache: yes
+      when: ansible_facts['os_family'] == 'Debian'
+    - name: Installation des packages de base pour docker famille centos
+      yum:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+        update_cache: yes
+      when: ansible_facts['os_family'] == 'RedHat'
 
     # Ajouter la clé gpg pour la sécurité des échanges avec le serveur des packages docker
     - name: ajout de la cle gpg
       apt_key:
         url: https://download.docker.com/linux/debian/gpg
         state: present
+      when: ansible_facts['os_family'] == 'Debian'
 
     # ajouter le repos pour chercher les packages de docker
     - name: Ajout de l'adresse du repos pour les packages docker de debian
