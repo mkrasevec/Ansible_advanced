@@ -4,5 +4,5 @@
   # vars: 
   #   - mysql_user: "nom utilisateur"
 
-  role:
+  roles:
     - ./role-docker-install # recherche ce dossier dans le sous dossier "roles"
