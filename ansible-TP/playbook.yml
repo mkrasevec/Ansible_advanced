@@ -49,8 +49,15 @@
           - docker-ce-cli
           - containerd.io
         update_cache: yes
+      notify: start docker service
 
-    # démarrage du service
+    # # démarrage du service
+    # - name: start docker service
+    #   service:
+    #     name: docker
+    #     state: started
+    #     enabled: yes
+  handlers:
     - name: start docker service
       service:
         name: docker
