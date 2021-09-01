@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   vars: 
-    nom_utilisateur: "toto"
+    nom_utilisateur: "tata"
   tasks:
   - name: copy file {{ nom_utilisateur }}
     copy: 
