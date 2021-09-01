@@ -1,8 +1,9 @@
 ---
 - hosts: all
   become: true
-  vars: 
-    nom_utilisateur: "tata"
+  # vars: 
+  #   nom_utilisateur: "tata"
+  vars_files: vars.yml
   tasks:
   - name: copy file {{ nom_utilisateur }}
     template: 
