@@ -27,8 +27,8 @@
   apt:
     name: "*"
     state: latest
-  update_cache: yes
-  force_apt_get: yes
+    update_cache: yes
+    force_apt_get: yes
     # installation des composants docker
 - name: install docker components
   apt:
@@ -45,9 +45,3 @@
     #     name: docker
     #     state: started
     #     enabled: yes
-  handlers:
-  - name: start docker service
-    service:
-      name: docker
-      state: started
-      enabled: yes
