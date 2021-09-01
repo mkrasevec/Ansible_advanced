@@ -1,5 +1,4 @@
 ---
-
 - name: Installation des packages de base pour docker famille Ubuntu
   apt:
     name:
@@ -28,8 +27,8 @@
   apt:
     name: "*"
     state: latest
-    update_cache: yes
-    force_apt_get: yes
+  update_cache: yes
+  force_apt_get: yes
     # installation des composants docker
 - name: install docker components
   apt:

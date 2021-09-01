@@ -7,7 +7,7 @@
       - curl
       - gnupg
       - lsb-release
-  update_cache: yes
+    update_cache: yes
   when: ansible_facts['os_family'] == 'Debian'
   
 
@@ -36,7 +36,7 @@
       - docker-ce
       - docker-ce-cli
       - containerd.io
-  update_cache: yes
+    update_cache: yes
   notify: start docker service
 
     # # démarrage du service
