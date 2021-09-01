@@ -64,5 +64,5 @@
     - name: start docker service
       service:
         name: docker
-        state: started
+        state: restarted
         enabled: yes
