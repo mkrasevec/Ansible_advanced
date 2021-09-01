@@ -11,6 +11,7 @@
         - vote
         - worker
         - result
+      when: ansible_facts['os_user'] == "Debian"
     - name: copy folder
       copy:
         src: ./{{item}}/
