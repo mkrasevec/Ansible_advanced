@@ -1,2 +1,6 @@
 [group1]
+<<<<<<< HEAD
 172.31.7.163 ansible_user=ansible
+=======
+13.37.240.28 ansible_user=ansible
+>>>>>>> 129eae109dcbbd3e1a88f2d8630af65d6f27db30
