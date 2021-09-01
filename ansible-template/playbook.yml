@@ -5,6 +5,6 @@
   tasks:
   - name: copy file
     copy: 
-      src: ./
-      dest: /
+      src: "index.html.j2"
+      dest: /html/index.html
 
