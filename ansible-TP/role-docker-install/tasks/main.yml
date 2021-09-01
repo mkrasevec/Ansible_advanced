@@ -1,5 +1,4 @@
 ---
-
 - name: Installation des packages de base pour docker famille Ubuntu
   apt:
     name:
